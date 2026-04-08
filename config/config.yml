@@ -1,7 +1,7 @@
 trakt:
-  username: "YOUR_TRAKT_USERNAME"
-  api_key: "YOUR_TRAKT_API_KEY"
-
+"clientId": "YOUR_CLIENT_ID_HERE",
+    "clientSecret": "YOUR_CLIENT_SECRET_HERE"
+    
 settings:
   dry_run: false
 
