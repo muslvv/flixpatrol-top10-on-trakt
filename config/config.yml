@@ -1,0 +1,28 @@
+trakt:
+  username: "YOUR_TRAKT_USERNAME"
+  api_key: "YOUR_TRAKT_API_KEY"
+
+settings:
+  dry_run: false
+
+lists:
+  # === Add the lists you want here ===
+  - name: "FlixPatrol - Netflix Top 10 Movies (US)"
+    platform: "netflix"
+    country: "united-states"
+    type: "movie"
+    limit: 10
+
+  - name: "FlixPatrol - Netflix Top 10 TV (US)"
+    platform: "netflix"
+    country: "united-states"
+    type: "tv"
+    limit: 10
+
+  - name: "FlixPatrol - Disney+ Top 10 Worldwide"
+    platform: "disney"
+    country: "worldwide"
+    type: "tv"
+    limit: 10
+
+  # Add more as needed (Prime, Max, etc.)
