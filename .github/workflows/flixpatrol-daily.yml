@@ -2,7 +2,7 @@ name: FlixPatrol to Trakt Daily
 
 on:
   schedule:
-    - cron: '0 8 * * *'     # Runs daily at 8:00 UTC
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run FlixPatrol → Trakt
+      - name: Run FlixPatrol Sync
         run: npm start
         env:
-          TRAKT_USERNAME: ${{ secrets.TRAKT_USERNAME }}
-          TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
+          TRAKT_CLIENT_SECRET: ${{ secrets.TRAKT_CLIENT_SECRET }}
